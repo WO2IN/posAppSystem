@@ -39,7 +39,7 @@ graph LR;
 
 ## 실행 방법
 - #### **[main_info.ini](../../main_info.ini)** : 기본 정보(버킷, 경로 등) 설정
-- #### **[main.sh](../../main.sh)** : main.sh 실행
+- #### **실행** : $ bash main.sh
 
 ## 실행 화면
 **Input 방식 선택**
