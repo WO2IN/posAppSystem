@@ -1,5 +1,7 @@
 # 최종 전처리
 
+## 코드 설명
+- #### **30만 라인 데이터 규격에 맞춰서 규격에 벗어나는 데이터는 NaN값으로 처리**
 
 ## 주요 함수 설명
 - #### **`BetterwhyData.py`** 
@@ -7,7 +9,7 @@
     - 인자값 : `df`(DataFrame)
     - 반환값 : `df`(DataFrame), `nun_cnt`(int)
     ---
-  - `set_outliers_to_none()` : **설정한 규격을 받아서 데이터 처리**
+  - `set_outliers_to_none()` : **설정한 규격을 받아서 규격에 넘는 데이터 NaN값으로 처리**
     - 인자값 : `df`(DataFrame), `column_ranges`(dict)
     - 반환값 : `df`(DataFrame), `nun_cnt`(int)
 ---
