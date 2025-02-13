@@ -9,16 +9,16 @@
 
 ### **🔹1차 데이터 전처리** (`first_processing`)
 
-✅ 기능
+#### ✅ 기능
 - 차량 데이터(`df`)를 입력받아 `clientid`를 기준으로 `betterwhy_cartype_list.csv`의 정보를 매칭
 - 차종(`car_type`), 모델 연도(`model_year`), 모델 월(`model_month`) 필드 추가
 - 정상 범위를 벗어난 값(`SOC`, `SOH`, `전류`, `온도` 등)은 `NaN`으로 변환
 
-🔹 입력값
+#### 🔹 입력값
 - `df` `(pd.DataFrame)`: 차량 데이터가 포함된 데이터프레임<br>　　　　　　　　 
                      `clientid` 필드를 포함해야 하며, 이를 기준으로 차종 정보를 매칭
 
-🔹 출력값
+#### 🔹 출력값
 - `pd.DataFrame`: 
   - 차종(`car_type`), 모델 연도(`model_year`), 모델 월(`model_month`) 필드가 추가된 데이터프레임
   - 이상값(`SOC`, `SOH`, `전류`, `온도` 등)이 `NaN`으로 처리됨.
