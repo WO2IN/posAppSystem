@@ -4,10 +4,11 @@
 ├── BetterwhyData.py # Betterwhy 데이터 관련 모듈 정의
 └── readme.md
 ```
+#### [1차 데이터 전처리 설명](#processing)
 
 ## 📌 BetterwhyData 모듈 설명
-
-### **🔹1차 데이터 전처리** (`first_processing`)
+### **🔹1차 데이터 전처리** (`First_Processing`)
+<a id="processing"></a>
 
 #### ✅ 기능
 - 차량 데이터(`df`)를 입력받아 `clientid`를 기준으로 `betterwhy_cartype_list.csv`의 정보를 매칭
@@ -23,6 +24,9 @@
 | 반환값 | 타입 | 설명 |
 |-|-|-|
 | `df`| `pd.DataFrame`|차종 정보 추가 및 이상값이 처리된 데이터프레임|
+
+### **🔹충/방전 구간 분류** (``)
+
 ## 📝 진행사항
 #### ✅ 완료된 작업
 -  충/방전 구간 분류 모듈화 **(2025.01.24)**
