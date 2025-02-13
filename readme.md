@@ -31,7 +31,7 @@ graph LR;
 
 | 파일명            | Bucket-Name |파일 경로|
 |-------------------|----------------------------------------------------------------------|-|
-| `원본 csv file`|keti-ev-data|betterwhy_data/betterwhy_origin　　　　　　　　　　　　　　|
+| `원본 csv file`|keti-ev-data|betterwhy_data/betterwhy_origin　　　　　　　　　　　　　　　　　　　　　　|
 | `전처리된 csv file`|``|betterwhy_data/betterwhy_preprocessed|
 | `급속구간 csv file`|``|betterwhy_data/betterwhy_fast_charge|
 | `완속구간 csv file`|``|betterwhy_data/betterwhy_slow_charge|
