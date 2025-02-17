@@ -5,7 +5,7 @@
 └── readme.md
 ```
 #### [**1차 데이터 전처리 설명**](#first_processing)
-#### [**충/방전 구간 분류 설명**](#classify_charging)
+#### [**충전/방전 구간 분류 설명**](#classify_charging)
 #### [**구간데이터 통계 추출**](#section_statistics)
 #### [**최종 전처리**](#final_processing)
 
@@ -87,8 +87,64 @@
 |-|-|-|
 | `df` | `pd.DataFrame` | 이상치가 처리된 데이터프레임 |
 
+## 📌 BetterwhyData 모듈 사용 방법
+**1. 필수 라이브러리 설치**
+```python
+pip install pandas
+pip install numpy
+```
+**2. BetterwhyData 선언**
+```python
+from Betterwhy_Data.BetterwhyData import *
+```
+**3. BetterwhyData 활용**
+```python
+# 1차 전처리
+df = first_processing(df)
 
+# 충전/방전 구간 분류 
+df[] = get_discharge_list(df)
 
+# 구간 데이터 통계 추출
+df = section_statistics(df, csv_path)
+
+# 최종 전처리
+df = final_processing(df)
+```
+
+## 📌 사용 예시(main.py)
+```python
+from Betterwhy_Data.BetterwhyData import *
+
+def main():
+    # csv_list = (CSV 파일 목록 가져오기 (MinIO 또는 Local))
+
+    for csv_file in csv_list:
+        df = pd.read_csv(csv_file)
+
+        # 1차 전처리 (df(pd.DataFrame) --> df(pd.DataFrame))
+        first_preproc = first_processing(df)
+
+        # 충전/방전 구간 분류 (df(pd.DataFrame) --> List[])
+        for discharging_df in get_discharge_list(df): # 방전구간 분류 
+            print(discharging_df)
+
+        for fast_charging_df in get_fast_charge_list(df): # 급속구간 분류
+            print(fast_charging_df)
+
+        for slow_charging_df in get_slow_charge_list(df): # 완속구간 분류
+            print(slow_charging_df)
+        
+        # 구간 데이터 통계 추출 (df(pd.DataFrame), csv_path(String) --> df(pd.DataFrame))
+        section_df = section_statistics(df, csv_path)
+
+        # 최종 전처리 (df(pd.DataFrame) --> df(pd.DataFrame))
+        final_preproc_df = final_processing(df)
+
+if __name__ == "__main__":
+    main()
+```
+---
 ## 📝 진행사항
 #### ✅ 완료된 작업
 -  충/방전 구간 분류 모듈화 **(2025.01.24)**
