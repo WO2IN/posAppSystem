@@ -74,9 +74,18 @@
 </table>
 
 #### 🔹 출력값
-| 반환값 | 타입 | 설명 |
-|-|-|-|
-| `pd.DataFrame` | `pd.DataFrame` | 각 구간에 대한 다양한 통계 정보가 포함된 데이터프레임 |
+<table>
+    <tr>
+        <th>매개변수</th>
+        <th>타입</th>
+        <th>설명</th>
+    </tr>
+    <tr>
+        <td><code>pd.DataFrame</code></td>
+        <td><code>pd.DataFrame</code></td>
+        <td>각 구간에 대한 다양한 통계 정보가 포함된 데이터프레임</td>
+    </tr>
+</table>
 
 ## 📝 진행사항
 #### ✅ 완료된 작업
