@@ -6,6 +6,7 @@
 ```
 #### [**1차 데이터 전처리 설명**](#first_processing)
 #### [**충/방전 구간 분류 설명**](#classify_charging)
+#### [**구간데이터 통계 추출**](#section_statistics)
 
 ## 📌 BetterwhyData 모듈 설명
 <a id="first_processing"></a>
@@ -46,7 +47,23 @@
 |-|-|-|
 | `{type}_charge_list` | `List[pd.DataFrame]` | `{type}`에 해당하는 구간이 포함된 데이터프레임들의 리스트 |
 
+<a id="section_statistics"></a>
+### ➖ **section_statistics**
 
+#### ✅ 기능
+- 주어진 데이터프레임에서 차량 구간별 통계 값을 추출하여 데이터프레임 형태로 반환
+- 차량 정보, 충전/방전 구간, 전력량, SOC 변화량, 주행거리, 전비, 온도, 충전 속도 등 다양한 지표를 계산하여 반환
+
+#### 🔹 입력값
+| 매개변수 | 타입 | 설명 |
+|-|-|-|
+| `df` | `pd.DataFrame` | 구간 통계를 계산할 데이터 |
+| `csv_file` | `str` | 파일 경로, 충전/방전 타입을 결정하는데 사용 |
+
+#### 🔹 출력값
+| 반환값 | 타입 | 설명 |
+|-|-|-|
+| `pd.DataFrame` | `pd.DataFrame` | 각 구간에 대한 다양한 통계 정보가 포함된 데이터프레임 |
 
 ## 📝 진행사항
 #### ✅ 완료된 작업
