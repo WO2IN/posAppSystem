@@ -11,7 +11,8 @@
 
 ## 📌 BetterwhyData 모듈 설명
 <a id="first_processing"></a>
-## ➖ **first_processing()**
+## **1차 전처리**
+### ➖ **`first_processing()`**
 
 #### ✅ 기능
 - 차량 데이터 `pd.DataFrame`를 입력받아 `clientid`를 기준으로 `betterwhy_cartype_list.csv`의 정보를 매칭  
@@ -31,7 +32,8 @@
 ---
 
 <a id="classify_charging"></a>
-## ➖ **get_{TYPE}_charge_list()**
+## **충전/방전 구간 분류**
+### ➖ **`get_slow_charge_list()` || `get_fast_charge_list()` || `get_discharge_list()`**
 
 #### ✅ 기능
 - 각 함수는 **충/방전 구간**을 분류하고, 해당 구간들을 **리스트 형태로 반환**
@@ -51,8 +53,8 @@
 ---
 
 <a id="section_statistics"></a>
-## ➖ **section_statistics**
-
+## **구간 데이터 통계 추출**
+### ➖ **`section_statistics`**
 #### ✅ 기능
 - 주어진 데이터프레임에서 차량 구간별 통계 값을 추출하여 데이터프레임 형태로 반환
 - 차량 정보, 충전/방전 구간, 전력량, SOC 변화량, 주행거리, 전비, 온도, 충전 속도 등 다양한 지표를 계산하여 반환
@@ -71,7 +73,8 @@
 ---
 
 <a id="final_processing"></a>
-## ➖ **final_processing**
+## **최종 전처리**
+### ➖ **`final_processing`**
 
 #### ✅ 기능
 - 데이터프레임에 대해 범위 검증을 수행하고, 각 열의 값이 정상 범위 내에 있는지 확인
@@ -112,8 +115,11 @@ df = section_statistics(df, csv_path)
 df = final_processing(df)
 ```
 
-## 📌 사용 예시(main.py)
+## 📌 사용 예시
 ```python
+import pandas
+import numpy 
+
 from Betterwhy_Data.BetterwhyData import *
 
 def main():
