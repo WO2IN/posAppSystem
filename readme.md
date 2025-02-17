@@ -31,7 +31,7 @@
 ---
 
 <a id="classify_charging"></a>
-## ➖ **get_slow_charge_list, get_fast_charge_list, get_discharge_list**
+## ➖ **get_{TYPE}_charge_list()**
 
 #### ✅ 기능
 - 각 함수는 **충/방전 구간**을 분류하고, 해당 구간들을 **리스트 형태로 반환**
@@ -46,8 +46,10 @@
 #### 🔹 출력값
 | 반환값 | 타입 | 설명 |
 |-|-|-|
-| `{type}_charge_list` | `List[pd.DataFrame]` | `{type}`에 해당하는 구간이 포함된 데이터프레임들의 리스트 |
-***
+| `{TYPE}_charge_list` | `List[pd.DataFrame]` | `{TYPE}`에 해당하는 구간이 포함된 데이터프레임들의 리스트 |
+
+---
+
 <a id="section_statistics"></a>
 ## ➖ **section_statistics**
 
@@ -65,6 +67,8 @@
 | 반환값 | 타입 | 설명 |
 |-|-|-|
 | `pd.DataFrame` | `pd.DataFrame` | 각 구간에 대한 다양한 통계 정보가 포함된 데이터프레임 |
+
+---
 
 <a id="final_processing"></a>
 ## ➖ **final_processing**
