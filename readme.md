@@ -1,14 +1,14 @@
-# 🚗 Betterwhy Data
+# Betterwhy Data
 ```bash
 ├── Main.py # Betterwhy 모듈 테스트 파일
 ├── BetterwhyData.py # Betterwhy 데이터 관련 모듈 정의
 └── readme.md
 ```
-#### [1차 데이터 전처리 설명](#first_processing)
-#### [충/방전 구간 분류 설명](#classify_charging)
+#### [**1차 데이터 전처리 설명**](#first_processing)
+#### [**충/방전 구간 분류 설명**](#classify_charging)
 
 ## 📌 BetterwhyData 모듈 설명
-### **🔹1차 데이터 전처리** (`First_Processing`)
+### 🔹 **first_processing()**
 <a id="first_processing"></a>
 
 #### ✅ 기능
@@ -26,15 +26,18 @@
 |-|-|-|
 | `df`| `pd.DataFrame`|차종 정보 추가 및 이상값이 처리된 데이터프레임|
 
-### **🔹구간 분류** (`Classify_Charging`)
+### 🔹**get_****_charge_list**
 <a id="classify_charging"></a>
 
 #### ✅ 기능
+- 
+-
+-
 
 #### 🔹 입력값
 | 매개변수 | 타입 | 설명 |
 |-|-|-|
-| `df`| `pd.DataFrame`|데이터프레임~|
+| `df`| `pd.DataFrame`|구간을 추출할 데이터프레임|
 
 #### 🔹 출력값
 | 반환값 | 타입 | 설명 |
