@@ -9,7 +9,7 @@
 
 ## 📌 BetterwhyData 모듈 설명
 <a id="first_processing"></a>
-### ➖ `first_processing()`
+### ➖ **first_processing()**
 
 #### ✅ 기능
 - 차량 데이터 (`df`)를 입력받아 `clientid`를 기준으로 `betterwhy_cartype_list.csv`의 정보를 매칭  
@@ -29,7 +29,7 @@
 ---
 
 <a id="classify_charging"></a>
-### ➖ `get_slow_charge_list`, `get_fast_charge_list`, `get_discharge_list`
+### ➖ **get_slow_charge_list, get_fast_charge_list, get_discharge_list**
 
 #### ✅ 기능
 - 각 함수는 **충/방전 구간**을 분류하고, 해당 구간들을 **리스트 형태로 반환**
@@ -57,4 +57,3 @@
   
 #### ⏳ 진행 중
 - README 작성 중 . . .
-
