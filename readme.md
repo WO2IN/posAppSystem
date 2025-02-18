@@ -1,5 +1,4 @@
 # 급속, 완속, 방전 구간 분류
----
 
 ## 🔧 주요 함수 설명
 - #### **BetterwhyData.py** 함수
@@ -8,7 +7,7 @@
   - **get_slow_charge_list()** : `완속구간`을 담은 데이터프레임 `리스트 반환` 함수
   - **charge_upload()** : `충전/방전구간`을 MinIO / Local에 `업로드`하는 함수
 
-<hr style="border: 2px solid black;">
+---
 
 ## ✅ 주요 기능
 - **공통 필드**  
@@ -25,7 +24,7 @@
 - **분류 결과**  
   - 위 **데이터 필드를 기반**으로 `급속`, `완속`, `방전` 구간으로 분류
 
-<hr style="border: 2px solid black;">
+---
 
 ## 🌐 데이터 입력 / 출력 경로
 
