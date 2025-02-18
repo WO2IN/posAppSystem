@@ -11,7 +11,7 @@
 
 ## 📌 BetterwhyData 모듈 설명
 <a id="first_processing"></a>
-<br>
+<hr style="border: 2px solid black;">
 
 ## **원본 데이터 전처리**
 ### ✔️ **first_processing()**
@@ -61,6 +61,8 @@
 | `{TYPE}_charge_list` | `List[pd.DataFrame]` | `{TYPE}`에 해당하는 구간이 포함된 데이터프레임들의 리스트 |
 <br> 
 
+<hr style="border: 2px solid black;">
+
 <a id="section_statistics"></a>
 
 ## **구간 데이터 통계 추출**
@@ -87,6 +89,8 @@
 | `pd.DataFrame` | `pd.DataFrame` | 각 구간에 대한 다양한 통계 정보가 포함된 데이터프레임 |
 <br> 
 
+<hr style="border: 2px solid black;">
+
 <a id="final_processing"></a>
 
 ## **최종 데이터 전처리**
@@ -109,6 +113,8 @@
 |-|-|-|
 | `df` | `pd.DataFrame` | 이상치가 처리된 데이터프레임 |
 <br>
+
+<hr style="border: 2px solid black;">
 
 ## 📌 BetterwhyData 모듈 사용 방법
 **1. 필수 라이브러리 설치**
