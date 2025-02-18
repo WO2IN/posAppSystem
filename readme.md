@@ -1,5 +1,6 @@
 # 급속, 완속, 방전 구간 분류
 
+<hr style="border: 2px solid black;">
 
 ## 🔧 주요 함수 설명
 - #### **BetterwhyData.py** 함수
