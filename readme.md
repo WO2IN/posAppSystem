@@ -1,6 +1,6 @@
 # 급속, 완속, 방전 구간 분류
 ---
----
+
 ## 🔧 주요 함수 설명
 - #### **BetterwhyData.py** 함수
   - **get_discharge_list()** : `방전구간`을 담은 데이터프레임 `리스트 반환` 함수
@@ -35,7 +35,7 @@
 |Betterwhy(Local)|$ rsync -avhz -e 'ssh -p 9990' --progress --partial data@59.14.241.229:/home/data/hdd_new/betterwhy_data/betterwhy_preproc 저장위치<br>[pw : evdataset1234!]| /
 |Betterwhy(MinIO)|keti-ev-data/betterwhy_data/betterwhy_preprocessed|tmp/classify_charging
 
-<hr style="border: 2px solid black;">
+---
 
 ## 📝 실행 결과
 ```python
