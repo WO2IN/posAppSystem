@@ -2,7 +2,7 @@
 
 
 ## 주요 함수 설명
-- #### `BetterwhyData.py` 함수
+- #### **BetterwhyData.py** 함수
   - `get_discharge_list()` : **방전구간**을 담은 데이터프레임 리스트 반환 함수
   - `get_fast_charge_list()` : **급속구간**을 담은 데이터프레임 리스트 반환 함수
   - `get_slow_charge_list()` : **완속구간**을 담은 데이터프레임 리스트 반환 함수
