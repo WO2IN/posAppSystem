@@ -11,7 +11,6 @@
 
 ## 📌 BetterwhyData 모듈 설명
 <a id="first_processing"></a>
-<hr style="border: 2px solid black;">
 
 ## **원본 데이터 전처리**
 ### ✔️ **first_processing()**
@@ -39,7 +38,7 @@
 <a id="classify_charging"></a>
 
 ## **충전/방전 구간 분류**
-#### **✔️ get_slow_charge_list() ・ get_fast_charge_list() ・ get_discharge_list()**
+### **✔️ get_slow_charge_list() ・ get_fast_charge_list() ・ get_discharge_list()**
 
 ⚠️ **원본 데이터 전처리 이후에 실행**
 
@@ -66,7 +65,7 @@
 <a id="section_statistics"></a>
 
 ## **구간 데이터 통계 추출**
-#### ✔️ **section_statistics()**
+### ✔️ **section_statistics()**
 ⚠️ **충전/방전 구간 분류 이후에 실행**
 
 ✅ **기능**
@@ -94,7 +93,7 @@
 <a id="final_processing"></a>
 
 ## **최종 데이터 전처리**
-#### ✔️ **final_processing()** 
+### ✔️ **final_processing()** 
 ⚠️ **구간 데이터 통계 추출 이후에 실행**
 
 ✅ **기능**
