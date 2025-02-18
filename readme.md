@@ -23,7 +23,7 @@
   - `fast_chg_current`: **급속충전기** 결속 시 **최대 전류량**
 
 - 분류 결과  
-  - 위 **데이터 필드를 기반**으로 `급속`, `완속`, `방전` **구간으로 분류**
+  - **위 데이터 필드를 기반**으로 `급속`, `완속`, `방전` **구간으로 분류**
 
 <br>
 
@@ -33,7 +33,7 @@
 |Betterwhy(Local)|$ rsync -avhz -e 'ssh -p 9990' --progress --partial data@59.14.241.229:/home/data/hdd_new/betterwhy_data/betterwhy_preproc 저장위치<br>[pw : evdataset1234!]| /
 |Betterwhy(MinIO)|keti-ev-data/betterwhy_data/betterwhy_preprocessed|tmp/classify_charging
 
-<br>
+<br><br>
 
 ## 📝 실행 결과
 ```python
