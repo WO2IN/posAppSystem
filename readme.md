@@ -28,20 +28,21 @@
     # power_quan, power_per_hour, power_per_soc, module_temp, \
     # temperature, mileage, accum_mileage, km_per_kWh, model_year, model_month
 ```
-| 필드명                    | 유효 값 범위                       | 필드명                       | 유효 값 범위                       |
+| **필드명**                    | **항목명**                         | **필드명**                       | **항목명**                           |
 |---------------------------|------------------------------------|------------------------------|------------------------------------|
-| `차량id`                  | **car_id**                           | `구간 기간(초)`              | `period`                           |
-| `차종`                    | `car_type`                         | `1시간당 SOC 충방전 속도`    | `charge_discharge_speed`           |
-| `충전/방전 타입`          | `charge_type`                      | `소모/충전 전력 량`          | `power_quan`                       |
-| `구간 시작기간`           | `start_time`                       | `1시간당 소모/충전된 전력량` | `power_per_hour`                   |
-| `구간 끝 시간`            | `end_time`                         | `SOC 1%당 소모/충전된 전력량`| `power_per_soc`                    |
-| `soh 평균`                | `soh`                              | `모듈 1~4 평균 온도`         | `module_temp`                      |
-| `팩 전압 평균`            | `p_volt`                           | `기온 평균`                  | `temperature`                      |
-| `팩 전류 평균`            | `p_current`                        | `구간 주행거리`              | `mileage`                          |
-| `셀 최대/최소 전압차 평균`| `cell_volt_diff`                   | `누적 주행거리`              | `accum_mileage`                    |
-| `soc 시작 값`             | `soc_start`                        | `전비`                       | `km_per_kWh`                       |
-| `soc 끝 값`               | `soc_end`                          | `연식(년)`                   | `model_year`                       |
-| `soc 충/방전 량`          | `soc_quan`                         | `연식(월)`                   | `model_month`                      |
+| `car_id`                  | **차량id**                         | `period`              | **구간 기간(초)**                           |
+| `car_type`                    | **차종**                       | `charge_discharge_speed`    | **1시간당 SOC 충방전 속도**           |
+| `charge_type`          | **충전/방전 타입**                      | `power_quan`          | **소모/충전 전력 량**                       |
+| `start_time`           | **구간 시작시간**                       | `power_per_hour` | **1시간당 소모/충전된 전력량**                   |
+| `end_time`            | **구간 끝 시간**                         | `power_per_soc`| **SOC 1%당 소모/충전된 전력량**                    |
+| `soh`                | **soh 평균**                              | `module_temp`         | **모듈 1~4 평균 온도**                      |
+| `p_volt`            | **팩 전압 평균**                           | `temperature`                  | **기온 평균**                      |
+| `p_current`            | **팩 전류 평균**                        | `mileage`              | **구간 주행거리**                          |
+| `cell_volt_diff`| **셀 최대/최소 전압차 평균**                   | `accum_mileage`              | **누적 주행거리**                    |
+| `soc_start`             | **soc 시작 값**                        | `km_per_kWh`                       | **전비**                       |
+| `soc_end`               | **soc 끝 값**                          | `model_year`                   | **연식(년)**                       |
+| `soc_quan`          | **soc 충/방전 량**                         | `model_month`                   | **연식(월)**                      |
+
 
 <br>
 
