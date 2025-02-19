@@ -17,17 +17,6 @@
 ```
 
 ## ✅ Betterwhy 출력 데이터
-```
-    # 차량id, 차종, 급속/완속/방전 타입, 구간 시작시간, 구간 끝 시간, soh 평균, 팩 전압 평균, 팩 전류 평균, 
-    # 셀 최대/최소 전압차 평균, soc 시작 값, soc 끝 값, soc 충/방전 량, 구간 기간(초), 1시간당 SOC 충방전 속도,
-    # 소모/충전 전력 량, 1시간당 소모/충전된 전력량, SOC 1%당 소모/충전된 전력량, 모듈 1~4 평균 온도,
-    # 기온 평균, 구간 주행거리, 누적 주행거리, 전비, 연식(년), 연식(월)
-
-    # car_id, car_type, charge_type, start_time, end_time, soh, p_volt , p_current, \
-    # cell_volt_diff, soc_start, soc_end, soc_quan, period, charge_discharge_speed, \
-    # power_quan, power_per_hour, power_per_soc, module_temp, \
-    # temperature, mileage, accum_mileage, km_per_kWh, model_year, model_month
-```
 | **필드명**                    | **항목명**                         | **필드명**                       | **항목명**                           |
 |---------------------------|------------------------------------|------------------------------|------------------------------------|
 | `car_id`                  | **차량id**                         | `period`              | **구간 기간(초)**                           |
