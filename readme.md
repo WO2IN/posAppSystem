@@ -1,4 +1,4 @@
-# **Betterwhy Section_Statistics (구간 통계 추출)**
+# **구간 데이터 통계 추출**
 <br>
 
 ## ⚠️ 주의사항 
@@ -8,15 +8,32 @@
 
 <br>
 
-## ✅ Betterwhy 입력 데이터
-```
-[ 'CLIENTID', 'TIMESTAMP', 'CAR_TYPE', 'SOH', 'PACK_V', 'CURRENT', 'SOC',
-      'DCH_SAC', 'CHG_SAC', 'TEMPERATURE1', 'TEMPERATURE2', 'TEMPERATURE3', 'TEMPERATURE4',
-      'TEMPERATURE5', 'MILEAGE', 'MODEL_YEAR', 'MODEL_MONTH'] 
-      + ['CELL' + str(n) for n in range(1,201)]
-```
+## ✅ 주요 기능
+- 데이터에서 **유효한 열**만 **필터링**하여 사용
+- **첫 5%** 와 **마지막 5%** 구간에서 시간 차이가 **1분 이상** 나는 데이터 삭제
+- `구간 시작/끝 시간`, `SOC 변화량`, `전력 소모량` 등 여러 가지 통계 정보 계산
 
-## ✅ Betterwhy 출력 데이터
+<br>
+
+## ✔️ Betterwhy 입력 데이터
+
+| **필드명**                | **항목명**         | **필드명**                | **항목명**         |
+|---------------------------|--------------------|---------------------------|--------------------|
+| `CLIENTID`                | **차량 ID**        | `TEMPERATURE1`            | **온도 1**         |
+| `TIMESTAMP`               | **타임스탬프**     | `TEMPERATURE2`            | **온도 2**         |
+| `CAR_TYPE`                | **차종**           | `TEMPERATURE3`            | **온도 3**         |
+| `SOH`                     | **SOH**            | `TEMPERATURE4`            | **온도 4**         |
+| `PACK_V`                  | **팩 전압**        | `TEMPERATURE5`            | **온도 5**         |
+| `CURRENT`                 | **전류**           | `SPEED`                   | **주행 속도**      |
+| `SOC`                     | **SOC**            | `MILEAGE`                 | **주행 거리**      |
+| `DCH_SAC`                 | **방전 전력량**    | `CHARGER_TYPE`            | **충전/방전 타입** |
+| `CHG_SAC`                 | **충전 전력량**    | `MODEL_YEAR`              | **모델 연도**      |
+| `CELL1` ~ `CELL200`       | **셀 1** ~ **셀 200** |`MODEL_MONTH`           | **모델 월**        |
+
+<br>
+
+## ✔️  Betterwhy 출력 데이터
+
 | **필드명**                    | **항목명**                         | **필드명**                       | **항목명**                           |
 |---------------------------|------------------------------------|------------------------------|------------------------------------|
 | `car_id`                  | **차량id**                         | `period`              | **구간 기간(초)**                           |
@@ -31,7 +48,6 @@
 | `soc_start`             | **soc 시작 값**                        | `km_per_kWh`                       | **전비**                       |
 | `soc_end`               | **soc 끝 값**                          | `model_year`                   | **연식(년)**                       |
 | `soc_quan`          | **soc 충/방전 량**                         | `model_month`                   | **연식(월)**                      |
-
 
 <br>
 
