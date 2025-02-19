@@ -54,8 +54,8 @@
 ## 🌐 데이터 입력 / 출력 경로
 | 데이터 종류 | 데이터 입력 위치 | 데이터 저장 위치 |
 |-|-|-|
-|Betterwhy(Local)|$ rsync -avhz -e 'ssh -p 9990' --progress --partial data@59.14.241.229:/home/data/hdd_new/betterwhy_data/betterwhy_origin 저장할 경로<br>[pw : evdataset1234!]| /
-|Betterwhy(MinIO)|keti-ev-data/betterwhy_data/betterwhy_origin|tmp/preproc
+|Sample (Local)|추가 예정|추가 예정
+|Sample (MinIO)|betterwhy-ev-tmp/|추가 예정
 
 <br><br>
 
