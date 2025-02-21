@@ -1,8 +1,10 @@
 # Betterwhy Data
 ```bash
+├── Main.py # Betterwhy 모듈 테스트 파일
 ├── BetterwhyData.py # Betterwhy 데이터 관련 모듈 정의
 └── readme.md
 ```
+
 #### [**원본 데이터 전처리**](#origin_preprocessing)
 #### [**충전/방전 구간 분류**](#classify_charging)
 #### [**구간 데이터 통계 추출**](#section_statistics)
@@ -19,7 +21,7 @@
 - `car_type`, `model_year`, `model_month` 필드 추가  
 - 이상값 (`SOC`, `SOH`, `전류`, `온도` 등)은 `NaN`으로 변환
 
-<br><br> 
+<br>
 
 🔹 **입력값**
 | 매개변수 | 타입 | 설명 |
@@ -47,9 +49,9 @@
 ✅ **기능**
 - 각 함수는 **충/방전 구간을 분류**하고, **해당 구간들을 리스트 형태로 반환**
 - 각 구간은 **충전 상태**(`chg_state`)에 따라 **필터링**되며, **SOC 변화량과 시간 차이로 구분됨**
-- **급속과 완속**은 `chg_state == 1`에서 각각 `fast_chg_current`, `slow_chg_current` 기준, 방전은 `chg_state == 0` 기준
+- **급속과 완속**은 `chg_state == 1`에서 각각 `fast_chg_current`, `slow_chg_current` 기준, **방전**은 `chg_state == 0` 기준
 
-<br><br> 
+<br> 
 
 🔹 **입력값**
 | 매개변수 | 타입 | 설명 |
@@ -87,7 +89,7 @@
 
 ⚠️ 파일 경로에 **충전/방전** 타입이 포함되거나 `charge_type` 필드가 있어야 함.
 
-<br><br>
+<br>
 
 🔹 **출력값**
 | 반환값 | 타입 | 설명 |
