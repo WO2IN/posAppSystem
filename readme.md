@@ -49,6 +49,7 @@
 |-|-|-|
 |Betterwhy (`Local`)|ev_process/betterwhy/data_files/sample/sample_preprocessed|ev_process/betterwhy/data_files/test
 |Betterwhy (`MinIO`)|`betterwhy-ev-tmp`/sample/sample_preprocessed|`betterwhy-ev-tmp`/
+
 <br><br>
 
 ## 📝 실행 결과
