@@ -6,7 +6,7 @@
 ### [모듈 종류]
 
 ```python
-get_csv_files_by_folder(input_folder) # 주어진 로컬 폴더에서 최대 2단계 깊이의 CSV 파일 리스트를 반환
+get_csv_files_by_folder(input_folder) # 주어진 로컬 폴더에서 CSV 파일 리스트를 반환
 
 # input_folder(String): 불러올 파일 경로
 ```
