@@ -40,12 +40,13 @@ save_outliers_meta(file_name, column_ranges, target_tot_rows, valid_count, nan_c
 get_slow_charge_list(df), get_fast_charge_list(df), get_discharge_list(df)
 
 기능
-- 주어진 데이터프레임에서 완속 충전 구간을 식별하고, 조건에 맞는 구간을 리스트로 반환합니다.
+- 주어진 데이터프레임에서 완속/급속/방전 구간을 식별하고, 조건에 맞는 구간을 리스트로 반환합니다.
 
 입력값
-- `df` (pd.DataFrame): 전기차 충전 데이터가 포함된 판다스 데이터프레임
+- `df` (pd.DataFrame): 처리할 데이터프레임
 
 출력값
-- `slow_charge_list` (list of pd.DataFrame): 완속 충전 구간을 포함하는 데이터프레임 리스트
-- 각 데이터프레임에는 `charge_type='slow_charge'` 컬럼이 추가됨
+- `(slow, fast, dis)_charge_list` (list of pd.DataFrame): 구간을 포함하는 데이터프레임 리스트
+- 각 데이터프레임에는 `charge_type` 컬럼이 추가됨
 ```
+
