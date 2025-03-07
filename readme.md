@@ -36,10 +36,8 @@ save_outliers_meta(file_name, column_ranges, target_tot_rows, valid_count, nan_c
 - `json_data` (dict): 이상치 처리 정보를 포함한 JSON 형식의 데이터
 ```
 
-```
-get_slow_charge_list(df),
-get_fast_charge_list(df),
-get_discharge_list(df)
+```python
+get_slow_charge_list(df), get_fast_charge_list(df), get_discharge_list(df)
 
 기능
 - 주어진 데이터프레임에서 완속 충전 구간을 식별하고, 조건에 맞는 구간을 리스트로 반환합니다.
