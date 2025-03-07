@@ -1,56 +1,17 @@
-# EV_PROCESSING
+## 작업 상태
+- ❌ 작업 1: 진행 중
+- 🔄 작업 2: 진행 중
+- ✅ 작업 3: 완료
 
-<br>
+## 📝 진행 예정
+1. 🔄 충/방전 코드 SK/배터와이/아이카 통합 스크립트 만들기
 
-## 📌 ev_preprocessing 모듈
+2. ❌ 구간 데이터 통계 코드 SK/배터와이/아이카 통합 스크립트 만들기
 
-### 🛠 모듈 목록
+3. ❌ 폴더 정리
 
----
+4. ❌ CSV 파일에 전처리 단계 확인용 필드 추가 (ex. `EV_SK_1`, `SEMICON_**_1`
 
-### 🔹 `set_outliers_to_nan(df, column_ranges)`
+5. ❌ 경로 설정 함수 만들기
 
-**기능**  
-- 규격에 맞게 이상치 값을 `NaN`으로 처리  
-
-**입력값**  
-- `df` (**pd.DataFrame**) : 처리할 데이터프레임  
-- `column_ranges` (**dict**) : 처리할 데이터와 규격 설정  
-  - 예시: `column_ranges = {'필드명': (min, max)}`  
-  - ✅ **필드명 입력 규칙**  
-    - 대소문자 구분 없음  
-    - 정확한 필드명 입력  
-    - `cell_1 ~ cell_180` 같은 경우 숫자 전까지만 입력 (예: `cell_`)  
-
----
-
-### 🔹 `save_outliers_meta(file_name, column_ranges, target_tot_rows, valid_count, nan_count, processed_by=os.geteuid())`
-
-**기능**  
-- 주어진 파일의 이상치(Outlier) 처리 정보를 JSON 형식으로 변환하여 반환  
-
-**입력값**  
-- `file_name` (**str**) : 처리 대상 CSV 파일의 이름  
-- `column_ranges` (**dict**) : 컬럼별 데이터 범위 조건  
-- `target_tot_rows` (**int**) : `column_ranges`에 포함된 컬럼의 총 데이터 개수  
-- `valid_count` (**dict**) : 컬럼별 유효한 데이터 개수  
-- `nan_count` (**dict**) : 컬럼별 이상치로 처리된 개수  
-- `processed_by` (**int**, 기본값: `os.geteuid()`) : 데이터 처리자의 ID  
-
-**출력값**  
-- `json_data` (**dict**) : 이상치 처리 정보를 포함한 JSON 형식의 데이터  
-
----
-
-### 🔹 `get_slow_charge_list(df)`, `get_fast_charge_list(df)`, `get_discharge_list(df)`
-
-**기능**  
-- 주어진 데이터프레임에서 **완속 / 급속 / 방전** 구간을 식별하고, 조건에 맞는 구간을 리스트로 반환  
-
-**입력값**  
-- `df` (**pd.DataFrame**) : 처리할 데이터프레임  
-
-**출력값**  
-- `slow_charge_list`, `fast_charge_list`, `discharge_list` (**list of pd.DataFrame**)  
-  - 구간을 포함하는 데이터프레임 리스트  
-  - 각 데이터프레임에는 `charge_type` 컬럼이 추가됨  
+6. ❌ README 작성 
