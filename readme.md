@@ -1,19 +1,16 @@
-# Betterwhy 데이터 전처리 프로세스
-
 ```mermaid
-graph TB;
-    Main --> |2번 선택|betterwhy[Betterwhy]
+graph LR;
+    Main --> betterwhy[Betterwhy]
     
-    betterwhy --> input_output["입출력 방식 선택 <br> (MinIO / Local / 이전화면)"] 
+    betterwhy --> input/output["입출력 방식 선택 <br> (MinIO / Local / 이전화면)"] 
 
-    input_output --> preproc_select[전처리 과정 선택]
-    input_output --> |이전 화면 선택|Main
+    input/output --> preproc_select[전처리 과정 선택]
+    input/output --> |이전 화면 선택|Main
 
-    preproc_select --> first_preproc[원본 데이터 전처리 작업]
-    first_preproc --> classify_charging[충전/방전 구간 분류 작업]
+    preproc_select --> frist_preproc[원본 데이터 전처리 작업]
+    frist_preproc --> classify_charging[충전/방전 구간 분류 작업]
     classify_charging --> section_statistics[구간 데이터 통계 추출 작업]
 ```
-
 
 ## 작업 상태
 - ❌ 작업 1: 진행 중
