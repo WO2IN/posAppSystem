@@ -1,5 +1,5 @@
 ```mermaid
-graph LR;
+graph  TB;
     Main --> betterwhy[Betterwhy]
     
     betterwhy --> input/output["입출력 방식 선택 <br> (MinIO / Local / 이전화면)"] 
