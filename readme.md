@@ -2,14 +2,15 @@
 graph LR;
     Main --> |2번 선택|betterwhy[Betterwhy]
     
-    betterwhy --> input/output[입출력 방식 선택<br>( MinIO / Local / 이전화면 )] 
+    betterwhy --> input_output[입출력 방식 선택 <br> (MinIO / Local / 이전화면)] 
 
-    input/output --> preproc_select[전처리 과정 선택]
-    input/output --> |이전 화면 선택|Main
+    input_output --> preproc_select[전처리 과정 선택]
+    input_output --> |이전 화면 선택|Main
 
-    preproc_select --> frist_preproc[원본 데이터 전처리 작업]
-    frist_preproc --> classify_charging[충전/방전 구간 분류 작업]
-    classify_charging --> section_statistics[구간 데이터 통계 추출 작업]
+    preproc_select --> |1번 선택|first_preproc[원본 데이터 전처리 작업]
+    first_preproc --> |2번 선택|classify_charging[충전/방전 구간 분류 작업]
+    classify_charging --> |3번 선택|section_statistics[구간 데이터 통계 추출 작업]
+
 ```
 
 
