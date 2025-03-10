@@ -1,8 +1,10 @@
+# Betterwhy 데이터 전처리 프로세스
+
 ```mermaid
 graph LR;
     Main --> |2번 선택|betterwhy[Betterwhy]
     
-    betterwhy --> input_output["입출력 방식 선택 <br> (MinIO / Local / 이전화면)"] 
+    betterwhy --> input/output["입출력 방식 선택 <br> (MinIO / Local / 이전화면)"] 
 
     input/output --> preproc_select[전처리 과정 선택]
     input/output --> |이전 화면 선택|Main
