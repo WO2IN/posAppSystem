@@ -47,7 +47,7 @@
 | 반환값 | 타입 | 설명 |
 |-|-|-|
 | `date_obj.timestamp()` | `float` |변환된 Epoch(유닉스 시간) |
-<br> <br> 
+<br>
 
 ---
 
