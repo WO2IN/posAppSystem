@@ -40,9 +40,12 @@ graph LR;
 <br>
 
 ## 📌 실행 방법
-✅ **샘플 데이터**의 입/출력 경로는 각 전처리 작업 폴더의 `readme.md` 파일에 명시되어 있습니다.
--  **[main_info.ini](../../main_info.ini)** : 기본 정보(버킷, 경로 등) 설정
--  **실행** : $ bash main.sh
+1️⃣ **[main_info.ini](../../main_info.ini)** : 기본 정보(버킷, 경로 등) 설정
+
+2️⃣ **실행** : 
+``` bash
+$ bash main.sh
+```
   
 ## 실행 화면
 **Input 방식 선택**
