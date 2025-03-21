@@ -40,7 +40,7 @@ graph LR;
 <br>
 
 ## 📌 실행 방법
-1️⃣ **[main_info.ini](../../main_info.ini)** : 기본 정보(버킷, 경로 등) 설정
+1️⃣ **[main_info.ini](https://github.com/dongsikyoon/SW-Platform/blob/main/apps/data_preprocessing_program/main_info.ini)** : 기본 정보(버킷, 경로 등) 설정
 
 2️⃣ **실행** : 
 ``` bash
