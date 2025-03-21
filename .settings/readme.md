@@ -9,7 +9,7 @@ graph LR;
     input/output --> preproc_select[전처리 과정 선택]
     input/output --> |이전 화면 선택|Main
 
-    preproc_select --> frist_preproc[원본 데이터 전처리 작업]
+    preproc_select --> origin_preproc[원본 데이터 전처리 작업]
 ```
 
 <br>
