@@ -1,5 +1,5 @@
 ```mermaid
-graph LR;
+graph TB;
     InputData --> |LLM 모델이 요청 이해 및 해석|LLM[LLM 모델]
     
     LLM --> |전처리 과정 선택|Preproc_Select[전처리 과정 선택]
