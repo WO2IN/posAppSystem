@@ -4,8 +4,7 @@ graph LR;
     
     LLM --> 전처리 AI 모델에 입력값 전달
 
-    input/output --> preproc_select[전처리 과정 선택]
-    input/output --> |이전 화면 선택|Main
+    LLM --> preproc_select[전처리 과정 선택]
 
     preproc_select --> origin_preproc[원본 데이터 전처리 작업]
 ```
