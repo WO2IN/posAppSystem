@@ -74,3 +74,17 @@ KETI_LLM/
 ## 📈 전처리 결과 예시
 
 ![image](https://github.com/WO2IN/ev_assets/blob/main/preprocessing_result.png)
+
+
+ ## 📝 진행사항
+
+ 
+ ✅ 완료된 작업
+ -  충/방전 구간 분류 모듈화 **(2025.01.24)**
+ -  구간 데이터 통계 추출 모듈화 **(2025.01.24)**
+ -  원본 데이터 전처리 모듈화 **(2025.02.10)**
+   
+ ⏳ 진행 중
+ - README 작성 중 . . .
+
+ ```
