@@ -46,6 +46,8 @@ KETI_LLM/
 └── requirements.txt                  # 프로젝트 의존 패키지 목록
 ```
 
+<br>
+
 ## ⚙️ 설치 및 실행 방법
 - ### 1️⃣ 시흥 GPU2 서버 접속
     ``` bash
@@ -67,7 +69,7 @@ KETI_LLM/
 - ### 3️⃣ Open-WebUI 접속
     - #### URL : http://localhost:3000/
     - #### Email : keti@keti.re.kr
-    - #### ID : KETI / PW : keti1234!
+    - #### `ID` : KETI / `PW` : keti1234!
     
 ## 📈 전처리 결과 예시
 
