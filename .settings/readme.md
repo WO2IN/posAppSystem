@@ -47,7 +47,28 @@ KETI_LLM/
 ```
 
 ## ⚙️ 설치 및 실행 방법
+- ### 1️⃣ 시흥 GPU2 서버 접속
+    ``` bash
+    ssh woo_1n@keti-ev1.iptime.org -p 2005 
+    PW: keti1234!
+    ```
+- ### 2️⃣ Open-WebUI 및 FastAPI 실행
+    ```bash
+    # Open-WebUI 실행
 
+    $ cd /home/woo_1n/betterwhy_data/KETI_LLM/open-webui
+    $ docker compose up -d
+
+    # FastAPI 실행
+
+    $ cd /home/woo_1n/betterwhy_data/KETI_LLM
+    $ uvicorn backend.api.main:app --host 0.0.0.0 --port 8001 --reload
+    ```
+- ### 3️⃣ Open-WebUI 접속
+    - #### URL : http://localhost:3000/
+    - #### Email : keti@keti.re.kr
+    - #### ID : KETI / PW : keti1234!
+    
 ## 📈 전처리 결과 예시
 
 ![image](https://github.com/WO2IN/ev_assets/blob/main/preprocessing_result.png)
