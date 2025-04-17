@@ -1,7 +1,7 @@
 ```mermaid
 graph LR
 
-A1[사용자 입력 - Open WebUI] --> A2[LLM 입력 해석]
+A1[사용자 입력 - Open WebUI] --> A2[LLM 자연어 해석]
 
 A2 -->|일반 채팅| B1[응답 생성 - GPT 방식]
 B1 --> B2[출력 - Open WebUI]
