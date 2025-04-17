@@ -1,4 +1,4 @@
-
+```mermaid
 graph LR;
 
     subgraph 사용자 입력 흐름
@@ -17,3 +17,4 @@ graph LR;
     C3 --> C4[전처리 결과 반환 (JSON)]
 
     C4 --> C5[결과를 Open WebUI에 출력]
+```
