@@ -1,4 +1,5 @@
-graph TD
+```mermaid
+graph td
 
 A1[사용자 입력 - Open WebUI] --> A2[입력 해석 LLM - 분기 판단]
 
@@ -10,3 +11,5 @@ A2 -->|EV 전처리 요청| C1[전처리 LLM - 명령 해석 및 매핑]
 C1 --> C2[함수 실행 - FastAPI / processor.py]
 C2 --> C3[결과 반환 - JSON]
 C3 --> C4[출력 - Open WebUI]
+
+```
