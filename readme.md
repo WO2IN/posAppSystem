@@ -1,18 +1,11 @@
 ```mermaid
 graph TD
 
-A1[사용자 입력 - Open WebUI] --> A2[입력 해석 LLM - 분기 판단]
-
-A2 -->|일반 채팅| B1[일반 챗 LLM]
-B1 --> B2[응답 생성 - GPT 방식]
-B2 --> B3[문자열 변환 (Str)]
-B3 --> B4[출력 - Open WebUI]
-
-A2 -->|EV 전처리 요청| C1[전처리 LLM - 명령 해석 및 함수 매핑]
-C1 --> C2[함수 실행 - FastAPI (processor.py)]
-C2 --> C3[결과 반환 - JSON]
-C3 --> C4[결과 포맷팅 - 출력용 Str 변환]
-C4 --> C5[출력 - Open WebUI]
-
+A1["사용자 입력 (Open WebUI)"] --> A2["입력 해석 LLM (ev_llm)"]
+A2 --> A3["명령어 기반 함수 선택 (LangChain + TOOLS dict)"]
+A3 --> A4["선택된 툴 실행 (processor.py 내 @tool 함수)"]
+A4 --> A5["결과 생성 (df_to_markdown 또는 sec_stats_format)"]
+A5 --> A6["포맷된 문자열 반환"]
+A6 --> A7["출력 - Open WebUI (StreamingResponse)"]
 
 ```
