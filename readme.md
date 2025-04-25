@@ -1,5 +1,5 @@
 ```mermaid
-graph td
+graph TD
 
 A1[사용자 입력 - Open WebUI] --> A2[입력 해석 LLM - 분기 판단]
 
