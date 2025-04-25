@@ -2,10 +2,16 @@
 graph TD
 
 A1["사용자 입력 (Open WebUI)"] --> A2["입력 해석 LLM (ev_llm)"]
-A2 --> A3["명령어 기반 함수 선택 (LangChain + TOOLS dict)"]
-A3 --> A4["선택된 툴 실행 (processor.py 내 @tool 함수)"]
-A4 --> A5["결과 생성 (df_to_markdown 또는 sec_stats_format)"]
-A5 --> A6["포맷된 문자열 반환"]
-A6 --> A7["출력 - Open WebUI (StreamingResponse)"]
+
+%% 🚧 [확장 예정] 일반 챗 요청일 경우 분기
+%% A2 -->|일반 챗 요청| B1["일반 챗 LLM (예: GPT 호출)"]
+%% B1 --> B2["자연어 응답 생성"]
+%% B2 --> B3["출력 - Open WebUI (StreamingResponse)"]
+
+A2 -->|EV 전처리 요청| C1["명령어 기반 함수 선택 (LangChain + TOOLS dict)"]
+C1 --> C2["선택된 툴 실행 (processor.py 내 @tool 함수)"]
+C2 --> C3["결과 생성 (df_to_markdown 또는 sec_stats_format)"]
+C3 --> C4["포맷된 문자열 반환"]
+C4 --> C5["출력 - Open WebUI (StreamingResponse)"]
 
 ```
