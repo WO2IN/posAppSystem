@@ -5,6 +5,7 @@ graph TD
     C --> D[AI가 툴 실행 (LangChain TOOLS)]
     D --> E[미리보기 CSV 출력 (나머지는 BackGround 처리)]
 
-    D -- 툴 선택 실패 --> A
-    E -- 미리보기 CSV 출력 --> A
+    D -->|툴 선택 실패| A
+    E -->|미리보기 CSV 출력| A
+
 ```
