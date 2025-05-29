@@ -4,6 +4,8 @@
 
 <img src="https://raw.githubusercontent.com/WO2IN/ev_assets/main/diagram.svg" alt="EV System Flow" width="1000"/>
 
+<br>
+
 ## 🧾 프로젝트 소개
 
 이 프로젝트는 **전기차 및 반도체 분야의 센서 및 시계열 데이터**를 자동으로 전처리하고,  
