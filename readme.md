@@ -4,7 +4,7 @@
 
 <img src="https://raw.githubusercontent.com/WO2IN/ev_assets/main/diagram.svg" alt="EV System Flow" width="1000"/>
 
-<br>
+<br><br>
 
 ## 🧾 프로젝트 소개
 
