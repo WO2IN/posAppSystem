@@ -5,8 +5,8 @@ flowchart TD
 subgraph FE [Front-end]
     A1["Open WebUI"]
     A2["사용자 입력"]
-    A3["Open WebUI 렌더링"]
-    A4["처리된 데이터 출력"]
+    A3["Open WebUI 데이터 출력"]
+    A4["Streamlit 데이터 시각화"]
 end
 
 %% Back-end 영역
@@ -30,8 +30,6 @@ B1 -->|LLM기반 툴 선택| B2
 B2 --> B3
 B3 -->|결과 반환| B4
 B4 --> A3
-A3 --> A4
-B4 -->|백그라운드로 전달| C2
+A3 --> |CSV File| A4
+B2 -->|백그라운드로 전달| C2
 C2 --> C3
-
-```
