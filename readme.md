@@ -35,6 +35,3 @@ A3 --> A4
 B4 -->|Send to background| C2
 C1 --> C2 --> C3
 ```
-:contentReference[oaicite:45]{index=45}
-
-```
