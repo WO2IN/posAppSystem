@@ -94,9 +94,9 @@ KETI_LLM/
 
 ## ⚙️ 실행 방법
 - ### ⭐ Open-WebUI 접속
-    - #### URL : http://keti-ev1.iptime.org:3333/
-    - #### Email : `keti@keti.re.kr`
-    - #### PW : `keti1234!`
+    - URL : http://keti-ev1.iptime.org:3333/
+    - Email : `keti@keti.re.kr`
+    - PW : `keti1234!`
 
 ---
 
