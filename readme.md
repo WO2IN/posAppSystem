@@ -1,5 +1,5 @@
 ```mermaid
-graph TD
+graph RD
 
 A1["Open WebUI"] --> A2["사용자 입력"]
 A2 -->|FastAPI| C1["자연어 해석 (Llama 3.3)"]
